@@ -19,7 +19,7 @@ const config: DocsThemeConfig = {
     placeholder: 'Qidirish',
   },
   editLink: {
-    text: 'GitHub da tahrirlash',
+    text: 'GitHub’da tahrirlash',
   },
   project: {
     link: 'https://github.com/onabot',
@@ -38,18 +38,18 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/onabot/website',
   feedback: {
-    content: 'Savolingiz bormi? Bizga habar bering →',
+    content: 'Savolingiz bormi? Bizga xabar bering',
     labels: 'feedback'
   },
   notFound: {
-    content: 'Siz o\'tgan havola mavjud emas →',
+    content: 'Siz o‘tgan havola mavjud emas',
     labels: 'bug'
   },
   useNextSeoProps: () => ({ titleTemplate: "%s \u2013 OnaBot.uz" }),
   gitTimestamp: function GitTimestamp({ timestamp }) {
     return (
       <>
-        Oxirgi o'zgargan vaqti:{' '}
+        Oxirgi o‘zgargan vaqti:{' '}
         <time dateTime={timestamp.toISOString()}>
           {timestamp.toLocaleDateString('uz-Latn', {
             day: 'numeric',
@@ -62,7 +62,7 @@ const config: DocsThemeConfig = {
   },
   themeSwitch: {
     useOptions() {
-      return { dark: 'To\'q ranglar', light: 'Och ranglar', system: 'Tizimimdagi' }
+      return { dark: 'To\'q ranglar', light: 'Och ranglar', system: 'Tizimimdagi ranglar' }
     }
   },
   head: (
