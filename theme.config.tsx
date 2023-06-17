@@ -19,7 +19,7 @@ const config: DocsThemeConfig = {
     placeholder: 'Qidirish',
   },
   editLink: {
-    text: 'GitHub’da tahrirlash',
+    text: 'Ushbu sahifani GitHub’da tahrirlash',
   },
   project: {
     link: 'https://github.com/onabot',
@@ -62,8 +62,11 @@ const config: DocsThemeConfig = {
   },
   themeSwitch: {
     useOptions() {
-      return { dark: 'To\'q ranglar', light: 'Och ranglar', system: 'Tizimimdagi ranglar' }
+      return { dark: 'To‘q ranglar', light: 'Och ranglar', system: 'Tizimimda belgilangan ranglar' }
     }
+  },
+  toc: {
+    title: 'Mundarija',
   },
   head: (
     <>

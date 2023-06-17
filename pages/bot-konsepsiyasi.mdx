@@ -1,0 +1,16 @@
+# Telegram Bot konsepsiyasi
+
+Telegram Bot - bu foydalanuvchilar, guruhlar yoki kanallar ora muloqotni dasturchi tomonidan boshqariladigan dastur hisoblanadi.
+Dasturchi va bot oralig‘ida muloqot **HTTP so‘rovlar** orqali amalga oshiriladi.
+
+## Polling va Webhook uslublari
+
+Bot qabul qilgan har qanday xabar **Update** *(yangilik)* orqali olinadi. **Update**’ni olish **Polling** va **Webhook** method’lari *(uslub)*  orqali amalga oshiriladi.
+
+**Polling** - bu Telegram serverlaridan **Update**’larni **manual** *(qo‘lda)* tortib olish hisoblanadi.
+
+**Webhook** - bu Telegram serverlari **Update**’lar paydo bo‘lishi bilan sizga jo‘natilishi hisoblanadi.
+
+Tezlik uchun **Webhook** uslubi Telegram tomonidan maslahat beriladi. Lekin **Webhook** ishlashi uchun sizning botingiz domen va serverga ega bo‘lishi va Telegram serverlari tomonidan so‘rovlar uchun mavjud bo‘lishi shart.
+
+Shuning uchun bot yozish vaqtida odatda **Polling** uslubi bilan foydalaniladi. Ekspluatatsiya mobaynida yoki **Production**’ga chiqarilganida-esa Webhook uslubi sozlanadi.
