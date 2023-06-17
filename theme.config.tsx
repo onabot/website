@@ -46,6 +46,25 @@ const config: DocsThemeConfig = {
     labels: 'bug'
   },
   useNextSeoProps: () => ({ titleTemplate: "%s \u2013 OnaBot.uz" }),
+  gitTimestamp: function GitTimestamp({ timestamp }) {
+    return (
+      <>
+        Oxirgi o'zgargan vaqti:{' '}
+        <time dateTime={timestamp.toISOString()}>
+          {timestamp.toLocaleDateString('ru', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          })}
+        </time>
+      </>
+    )
+  },
+  themeSwitch: {
+    useOptions() {
+      return { dark: 'To\'q ranglar', light: 'Och ranglar', system: 'Tizimimdagi' }
+    }
+  },
   head: (
     <>
       <meta name="msapplication-TileColor" content="#fff" />
