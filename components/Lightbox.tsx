@@ -7,6 +7,7 @@ const Lightbox: React.FC<{
   images: {
     src: string,
     alt: string,
+    caption?: string,
   }[]
 }> = ({ identifier = 'lightbox1', images }) => {
   React.useEffect(() => {

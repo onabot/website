@@ -36,7 +36,7 @@ const config: DocsThemeConfig = {
       </>
     )
   },
-  docsRepositoryBase: 'https://github.com/onabot/website',
+  docsRepositoryBase: 'https://github.com/onabot/website/tree/main',
   feedback: {
     content: 'Savolingiz bormi? Bizga xabar bering',
     labels: 'feedback'
