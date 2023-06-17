@@ -18,6 +18,7 @@
   },
   "homepage": "https://onabot.uz",
   "dependencies": {
+    "lightbox.js-react": "^0.6.4",
     "next": "^13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
