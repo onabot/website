@@ -51,7 +51,7 @@ const config: DocsThemeConfig = {
       <>
         Oxirgi o'zgargan vaqti:{' '}
         <time dateTime={timestamp.toISOString()}>
-          {timestamp.toLocaleDateString('ru', {
+          {timestamp.toLocaleDateString('uz-Latn', {
             day: 'numeric',
             month: 'long',
             year: 'numeric'
