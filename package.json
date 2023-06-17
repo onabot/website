@@ -1,0 +1,30 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onabot/website.git"
+  },
+  "author": "Shakhzod Kudratov <shakhzodkudratov@gmail.com>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/onabot/website/issues"
+  },
+  "homepage": "https://onabot.uz",
+  "dependencies": {
+    "next": "^13.0.6",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "typescript": "^4.9.3"
+  }
+}
