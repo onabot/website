@@ -45,6 +45,7 @@ const config: DocsThemeConfig = {
     content: 'Siz o\'tgan havola mavjud emas →',
     labels: 'bug'
   },
+  useNextSeoProps: () => ({ titleTemplate: "%s \u2013 OnaBot.uz" }),
   head: (
     <>
       <meta name="msapplication-TileColor" content="#fff" />
