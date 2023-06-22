@@ -24,3 +24,28 @@ import Lightbox from "../components/Lightbox";
 Tezlik uchun **Webhook** uslubi Telegram tomonidan maslahat beriladi. Lekin **Webhook** ishlashi uchun sizning botingiz domen va serverga ega bo‘lishi va Telegram serverlari tomonidan so‘rovlar uchun mavjud bo‘lishi shart.
 
 Shuning uchun bot yozish vaqtida odatda **Polling** uslubi bilan foydalaniladi. Ekspluatatsiya mobaynida yoki **Production**’ga chiqarilganida-esa Webhook uslubi sozlanadi.
+
+
+## Bot yaratish uslubi
+
+Telegram Bot’ni faqatgina [@BotFather](https://t.me/BotFather) bot orqali yaratish imkoni bor. [Video ko‘rsatma](https://t.me/onabotuzassets/2)
+
+Bot yaratilgandan so‘ng, u sizga `123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11`’ga o‘xshash **Token** beradi.
+
+Botni brauzerdan ham turib tekshirish imkoniyatiga egasiz. Buning uchun brauzeringizda `https://api.telegram.org/bot[bu_yerga_token]/getMe` sahifaga o‘ting.
+
+Keladigan javob misoli:
+```json
+{
+    "ok": true,
+    "result": {
+        "id": 6250663562,
+        "is_bot": true,
+        "first_name": "OnaBot.uz - Bot",
+        "username": "onabotuz_bot",
+        "can_join_groups": true,
+        "can_read_all_group_messages": false,
+        "supports_inline_queries": false
+    }
+}
+```

@@ -1,0 +1,46 @@
+# Umumiy ma’lumot
+
+**Python Telegram Bot (PTB)** - bu Python dasturlash tilida yozilgan kutubxona bo‘lib, siz uchun [Telegram Bot](https://core.telegram.org/bots/api) yaratish jarayonini osonlashtirib beradi.
+
+**Havolalar:**
+- Kutubxonaning [veb-sayti](https://python-telegram-bot.org/)
+- Kutubxonaning [GitHub sahifasi](https://github.com/python-telegram-bot/python-telegram-bot/)
+
+## **PTB** o‘rnatish uslublari
+
+import { Tab, Tabs } from 'nextra-theme-docs'
+
+<Tabs items={['requirements.txt']} defaultIndex="0">
+    <Tab>
+        ```bash
+        pip3 install python-telegram-bot --upgrade
+        ```
+    </Tab>
+</Tabs>
+
+Qo‘shimcha o‘rnatish uslublarini kutubxona [GitHub sahifasidan](https://github.com/python-telegram-bot/python-telegram-bot/tree/master#installing) topishingiz mumkin.
+
+## **PTB** tuzilishi
+
+**PTB** `telegram` va `telegram.ext` modullaridan iborat.
+
+### `telegram` moduli
+
+Ushbu modulda faqat [Telegram Bot API](https://core.telegram.org/bots/api) bilan ishlash uchun "o‘ralma" mavjud.
+O‘ralma deganda Python tilida siz uchun qulay `class`’lar, `type`’lar va hokazo yozilgan kodlarni nazarda tutyapman.
+
+Misol uchun:
+
+```python
+import asyncio
+from telegram import Bot
+
+async def main():
+    bot = Bot(token='im123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11') # Shu yerga o‘z token’ingizni qo‘ying
+    await bot.sendMessage(chat_id=1234567, text="OnaBot.uz dan salom!") # O‘zingizni chat_id’ingizni qo‘ying
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+### `telegram.ext` moduli
